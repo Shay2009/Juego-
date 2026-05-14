@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shay's Computers: Basic Electricity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="game-container">
+        <header>
+            <h1>SHAY'S COMPUTERS</h1>
+            <p>SISTEMA DE CONTROL ELÉCTRICO</p>
+        </header>
+
+        <div class="main-panel">
+            <div class="meter-container">
+                <div id="danger-bar"></div>
+                <div class="labels">
+                    <span>15A - PELIGRO</span>
+                    <span>7.5A - CARGA</span>
+                    <span>0A - SEGURO</span>
+                </div>
+            </div>
+
+            <div class="circuit-board">
+                <div class="stats">
+                    <p>CORRIENTE: <span id="amp-display">0.0</span> A</p>
+                    <p>ESTADO: <span id="status-display">ESTABLE</span></p>
+                </div>
+                
+                <div id="cable-area">
+                    </div>
+
+                <button id="connect-btn">CONECTAR CABLE PROXIMO</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="hidden">
+        <div id="message-box">
+            <h2 id="result-text"></h2>
+            <button onclick="location.reload()">REINTENTAR</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
